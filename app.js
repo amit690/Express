@@ -1,0 +1,15 @@
+const express = require("express");
+
+const app = express(); 
+
+app.use((req, res, next) => {
+    console.log('I am in middleware');
+    next(); // Pass control to the next middleware function
+});
+
+app.use((req, res, next) => {
+    console.log('Another middleware');
+    res.send('<h1>I am so excited to learn Express</h1>');
+});
+
+app.listen(3000);
