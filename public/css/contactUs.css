@@ -1,0 +1,92 @@
+body {
+    background-color: rgb(80, 80, 222);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.main-header {
+    width: 100%;
+    height: 3rem;
+    background-color: rgb(61, 27, 93);
+    margin: 0;
+    padding: 0;
+}
+
+.main-header-navbar {
+    height: 100%;
+}
+
+.main-header-navbar-ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.main-header-navbar-ul-li {
+    margin: 0.8rem 1rem;
+}
+
+.main-header-navbar-ul-li a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.main-header-navbar-ul-li a:hover {
+    color: rgb(220, 220, 255);
+    font-weight: bold;
+}
+
+main {
+    margin: 2rem;
+    padding: auto;
+    color: #ffffff;
+}
+
+.product-form {
+    background-color: #3e3e9e;
+    padding: 1.5rem;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;  /* Ensures that all input fields are the same width */
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box; /* Ensures padding doesn't affect the width */
+}
+
+button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #00796b;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004d40;
+}

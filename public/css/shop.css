@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(80, 80, 222);
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.main-header{
+    width: 100%;
+    height: 3rem;
+    background-color: rgb(61, 27, 93);
+    margin: 0;
+    padding: 0;
+
+}
+
+.main-header-navbar{
+    height: 100%;
+}
+
+.main-header-navbar-ul{
+    display: flex;
+    justify-content: right;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.main-header-navbar-ul-li{
+    margin: 0.8rem 1rem;
+    
+}
+
+.main-header-navbar-ul-li a {
+    color: white; /* Normal text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: normal; /* Set text to normal weight */
+    transition: color 0.3s ease, font-weight 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.main-header-navbar-ul-li a:hover {
+    color: rgb(220, 220, 255); /* Change text color on hover */
+    font-weight: bold; /* Make text bold on hover */
+}
+
+
+
+main{
+    margin: 2rem;
+    padding: auto;
+}
