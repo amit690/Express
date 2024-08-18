@@ -10,6 +10,8 @@ const shopRouters=require('./routes/shop.js');
 
 const contactUsRouters=require('./routes/contactUs.js');
 
+const extrafunctionContolers=require('./controlers/extrafunctions.js')
+
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.use(express.static(path.join(__dirname,'public')));
@@ -23,11 +25,7 @@ app.use('/admin',adminRouters);
 app.use('/shop',shopRouters);
 app.use(contactUsRouters);
 
-app.use((req,res,next)=>{
-    res.status(404).sendFile(path.join(__dirname, 'views', 'notfound.html'));
-});
-
-
+app.use(extrafunctionContolers.notFound);
 
 
 app.listen(3000);
